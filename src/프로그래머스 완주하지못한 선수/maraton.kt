@@ -1,4 +1,4 @@
-package `1`
+package `프로그래머스 완주하지못한 선수`
 import kotlin.collections.HashMap
 
 class MarathonKt{
