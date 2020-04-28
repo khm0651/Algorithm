@@ -1,4 +1,4 @@
-package `1`
+package `프로그래머스 주식가격`
 
 import java.util.*;
 
