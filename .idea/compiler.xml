@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 기능개발" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 다리를 지나는 트럭" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 가운데숫자출력" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 멀쩡한 사각형" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 모의고사" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 문자열 압축" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 쇠막대기" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 스킬트리" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 완주하지못한 선수" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 위장" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 전화번호 목록" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 주식가격" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 체육복" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 크레인 인형뽑기" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 탑" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/프로그래머스 프린터" includeSubdirectories="true" />
+    </excludeFromCompile>
+  </component>
+</project>
