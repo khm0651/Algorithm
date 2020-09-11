@@ -3,11 +3,12 @@ import java.util.Scanner
 
 var count = 0
 var answer = arrayListOf<Int>()
+var visit = arrayListOf<String>()
 
 fun main (args:Array<String>){
     var sc : Scanner = Scanner(System.`in`)
     var n : Int = 0;
-     n = sc.nextLine().toInt()
+    n = sc.nextLine().toInt()
     var arr = Array(n, { IntArray(n) })
     var map = Array(n, { Array<String>(n ,{"0"}) })
     for(i in 0 until n){
@@ -41,14 +42,10 @@ fun find(arr: Array<IntArray>, map: Array<Array<String>>, i: Int, j: Int) {
     if(arr[i][j] == 1 && map[i][j]!="visit"){
         count = count + 1
         map[i][j]="visit"
-
+        visit.add("( ${i} , ${j} )")
         if(j != 0 && arr[i][j-1] == 1 && map[i][j-1]!="visit") find(arr,map,i,j-1)
         if(j != arr[i].size -1 && arr[i][j+1]==1 && map[i][j+1]!="visit") find(arr,map,i,j+1)
         if(i != 0 && arr[i-1][j]==1 && map[i-1][j]!="visit") find(arr,map,i-1,j)
         if(i != arr.size -1 && arr[i+1][j]==1 && map[i+1][j]!="visit") find(arr,map,i+1,j)
     }
 }
-
-
-
-
