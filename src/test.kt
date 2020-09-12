@@ -1,80 +1,53 @@
 
-import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
-import kotlin.collections.*
 
-var dfsAnswer = arrayListOf<Int>()
-lateinit var dfsVisit : Array<String>
-var bfsAnswer = arrayListOf<Int>()
-lateinit var bfsVisit : Array<String>
-var q  : Queue<Int> = LinkedList<Int>()
+
 
 fun main (args:Array<String>){
-    var sc : Scanner = Scanner(System.`in`)
-    var str = sc.nextLine()
-    var nodeNumber = str.split(" ")[0].toInt()
-    var lineNumber = str.split(" ")[1].toInt()
-    var startNumber = str.split(" ")[2].toInt()
-    var hashMap :HashMap<Int,ArrayList<Int>> = hashMapOf()
-    dfsVisit = Array<String>(nodeNumber,{""})
-    bfsVisit = Array<String>(nodeNumber,{""})
 
-    for(i in 1 .. nodeNumber){
-        hashMap.put(i, arrayListOf())
+    var reg1 = Regex("^[a-zA-Z0-9.\\-_]*$")
+    var reg2 = Regex("[^a-zA-Z0-9.\\-_]*$")
+    var new_id = ""
+    var check = true
+    if(!(new_id.length>=3 && new_id.length<=15)){
+        check= false
     }
-    for(i in 0 until lineNumber){
-        var lineStr = sc.nextLine().split(" ")
-        var arrayList1 = hashMap.get(lineStr[0].toInt())
-        arrayList1!!.add(lineStr[1].toInt())
-        arrayList1.sort()
-        hashMap.put(lineStr[0].toInt(),arrayList1)
-
-        var arrayList2 = hashMap.get(lineStr[1].toInt())
-        arrayList2!!.add(lineStr[0].toInt())
-        arrayList2.sort()
-        hashMap.put(lineStr[1].toInt(),arrayList2)
-    }
-
-
-    dfs(hashMap, startNumber)
-    bfs(hashMap, startNumber)
-
-    for(i in 0 until dfsAnswer.size){
-        print("${dfsAnswer[i]} ")
-    }
-    println()
-    for(i in 0 until bfsAnswer.size){
-        print("${bfsAnswer[i]} ")
-    }
-}
-
-fun bfs(hashMap: HashMap<Int, ArrayList<Int>>, startNumber: Int) {
-
-    bfsVisit[startNumber-1] = "visit"
-    bfsAnswer.add(startNumber)
-    q.offer(startNumber)
-    while(!q.isEmpty()){
-        var number = q.poll()
-        for(i in hashMap.get(number)!!){
-            if(bfsVisit[i-1] != "visit"){
-                q.offer(i)
-                bfsVisit[i-1] = "visit"
-                bfsAnswer.add(i)
+    if(check){
+        check = reg1.matches(new_id)
+        for(i in 0 until new_id.length){
+            if(i == 0 || i==new_id.length-1){
+                if(new_id.get(i) == '.'){
+                    check = false
+                }
+            }
+            if(i!=0 && (new_id.get(i-1) == '.' && new_id.get(i) == '.')){
+                check = false
             }
         }
-
     }
-}
 
-fun dfs(hashMap: HashMap<Int, ArrayList<Int>>, startNumber: Int) {
 
-    if(dfsVisit[startNumber-1] != "visit"){
-        dfsVisit[startNumber-1] = "visit"
-        dfsAnswer.add(startNumber)
-        for(i in hashMap.get(startNumber)!!){
-            dfs(hashMap,i)
+    if(!check){
+        var reco_id = new_id.toLowerCase()
+        reco_id = reco_id.replace("[^a-zA-Z0-9\\-._]".toRegex(),"")
+        reco_id = reco_id.replace("\\.+".toRegex(),".")
+        reco_id = reco_id.replace("^\\.".toRegex(),"")
+        reco_id = reco_id.replace("\\.$".toRegex(),"")
+        if(reco_id == ""){
+            reco_id = "a"
         }
+        if(reco_id.length>=16){
+            reco_id = reco_id.substring(0,15)
+        }
+        reco_id = reco_id.replace("\\.$".toRegex(),"")
+        if(reco_id.length<=2){
+            var c = reco_id.get(reco_id.length-1)
+            while(reco_id.length !=3){
+                reco_id = "${reco_id}${c}"
+            }
+        }
+        println(reco_id)
+    }else{
+        println(new_id)
     }
 
 }
