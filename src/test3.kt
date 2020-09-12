@@ -31,7 +31,7 @@ fun main (args:Array<String>){
         find(0,mapList,queryArr,arrList, arrayListOf<HashMap<String,String>>())
     }
 
-    print(`프로그래머스 타겟넘버`.answer.toIntArray())
+    answer.toIntArray()
 
 }
 
@@ -40,7 +40,7 @@ fun find(index : Int, mapList:ArrayList<HashMap<String,String>>,queryArr : Array
         return
     }
     if(index == queryArr.size){
-        `프로그래머스 타겟넘버`.answer.add(mapList.size)
+        answer.add(mapList.size)
         return
     }
     preArr.clear()

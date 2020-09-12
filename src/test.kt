@@ -4,8 +4,8 @@
 
 fun main (args:Array<String>){
 
-    var reg1 = Regex("^[a-zA-Z0-9.\\-_]*$")
-    var reg2 = Regex("[^a-zA-Z0-9.\\-_]*$")
+    var reg1 = Regex("^[`프로그래머스 네트워크`.getA-zA-Z0-9.\\-_]*$")
+    var reg2 = Regex("[^`프로그래머스 네트워크`.getA-zA-Z0-9.\\-_]*$")
     var new_id = ""
     var check = true
     if(!(new_id.length>=3 && new_id.length<=15)){
@@ -28,12 +28,12 @@ fun main (args:Array<String>){
 
     if(!check){
         var reco_id = new_id.toLowerCase()
-        reco_id = reco_id.replace("[^a-zA-Z0-9\\-._]".toRegex(),"")
+        reco_id = reco_id.replace("[^`프로그래머스 네트워크`.getA-zA-Z0-9\\-._]".toRegex(),"")
         reco_id = reco_id.replace("\\.+".toRegex(),".")
         reco_id = reco_id.replace("^\\.".toRegex(),"")
         reco_id = reco_id.replace("\\.$".toRegex(),"")
         if(reco_id == ""){
-            reco_id = "a"
+            reco_id = "`프로그래머스 네트워크`.getA"
         }
         if(reco_id.length>=16){
             reco_id = reco_id.substring(0,15)
