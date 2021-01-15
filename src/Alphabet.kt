@@ -16,29 +16,41 @@ fun main(args : Array<String>){
 
     }
 
-    alphabetDFS(arr, visit, 0, 0, history, 1)
-    println(history.size)
+    alphabetDFS(arr, visit, 0, 0, history )
+    println(max)
+
 }
 
-fun alphabetDFS(arr: Array<Array<String>>, visit: Array<Array<Boolean>>, idx: Int, jdx: Int, history: ArrayList<String>, count:Int) : Int {
-    if(history.contains(arr[idx][jdx])) {
-        history.removeAt(history.size-1)
-        return count
-    }else{
-        if(!visit[idx][jdx]){
-            history.add(arr[idx][jdx])
-            visit[idx][jdx]
-            var c = count
-            if(jdx-1 >= 0) c = alphabetDFS(arr, visit, idx, jdx - 1, history, c)
-            if(jdx+1 < arr[0].size) c = alphabetDFS(arr, visit, idx, jdx + 1, history, c)
-            if(idx-1 >= 0) c = alphabetDFS(arr, visit, idx - 1, jdx, history, c)
-            if(idx+1 < arr.size) c = alphabetDFS(arr, visit, idx + 1, jdx, history, c)
+fun alphabetDFS(arr: Array<Array<String>>, visit: Array<Array<Boolean>>, idx: Int, jdx: Int, history: ArrayList<String>) {
 
+    if (visit[idx][jdx]) {
+
+        return
+    } else {
+        if (history.contains(arr[idx][jdx])) {
+            return
         }
+
+        history.add(arr[idx][jdx])
+        visit[idx][jdx] = true
+
+        if (jdx - 1 >= 0) {
+            if (!visit[idx][jdx - 1]) alphabetDFS(arr, visit, idx, jdx - 1, history)
+        }
+        if (jdx + 1 < arr[0].size) {
+            if (!visit[idx][jdx + 1]) alphabetDFS(arr, visit, idx, jdx + 1, history)
+        }
+        if (idx - 1 >= 0) {
+            if (!visit[idx - 1][jdx]) alphabetDFS(arr, visit, idx - 1, jdx, history)
+        }
+        if (idx + 1 < arr.size) {
+            if (!visit[idx + 1][jdx]) alphabetDFS(arr, visit, idx + 1, jdx, history)
+        }
+        if (history.size > max) max = history.size
+
+        history.removeAt(history.size - 1)
+        visit[idx][jdx] = false
+
     }
-
-
-
-    return count
 
 }
