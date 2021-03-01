@@ -33,6 +33,39 @@
       <directory url="file://$PROJECT_DIR$/src/백준 퇴사" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/src/백준 영화감독숌" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/src/백준 체스판다시칠하기" includeSubdirectories="true" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1654.kt" />
+      <file url="file://$PROJECT_DIR$/src/test3.kt" />
+      <file url="file://$PROJECT_DIR$/src/Alphabet.kt" />
+      <file url="file://$PROJECT_DIR$/src/N&amp;M.kt" />
+      <file url="file://$PROJECT_DIR$/src/NandM(upgrade).kt" />
+      <file url="file://$PROJECT_DIR$/src/NandM.kt" />
+      <file url="file://$PROJECT_DIR$/src/NandM2.kt" />
+      <file url="file://$PROJECT_DIR$/src/NandM3.kt" />
+      <file url="file://$PROJECT_DIR$/src/NandM4.kt" />
+      <file url="file://$PROJECT_DIR$/src/Operator.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1012.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1021.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon10217.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon10816.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11053.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1753.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1991.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2470.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon3273.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon4949.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon7576.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon9012.kt" />
+      <file url="file://$PROJECT_DIR$/src/baekjoon1697.kt" />
+      <file url="file://$PROJECT_DIR$/src/baekjoon1966.kt" />
+      <file url="file://$PROJECT_DIR$/src/candidate.kt" />
+      <file url="file://$PROJECT_DIR$/src/failRating.kt" />
+      <file url="file://$PROJECT_DIR$/src/insertOp.kt" />
+      <file url="file://$PROJECT_DIR$/src/naver2.kt" />
+      <file url="file://$PROJECT_DIR$/src/openChatting.kt" />
+      <file url="file://$PROJECT_DIR$/src/test.kt" />
+      <file url="file://$PROJECT_DIR$/src/test2.kt" />
+      <file url="file://$PROJECT_DIR$/src/weight.kt" />
+      <file url="file://$PROJECT_DIR$/src/wordChange.kt" />
     </excludeFromCompile>
   </component>
 </project>
