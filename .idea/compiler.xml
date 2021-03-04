@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="800" />
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/src/프로그래머스 기능개발" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/src/프로그래머스 다리를 지나는 트럭" includeSubdirectories="true" />
@@ -66,6 +67,80 @@
       <file url="file://$PROJECT_DIR$/src/test2.kt" />
       <file url="file://$PROJECT_DIR$/src/weight.kt" />
       <file url="file://$PROJECT_DIR$/src/wordChange.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon14501.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1260List.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2178.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon13305.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon14002.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon9370.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2579.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1932.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon5639.kt" />
+      <file url="file://$PROJECT_DIR$/src/fadoban.kt" />
+      <file url="file://$PROJECT_DIR$/src/backjoon2468.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1780.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2630.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2606.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1541.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2206.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1992.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11724.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1912.kt" />
+      <file url="file://$PROJECT_DIR$/src/BaeckjoonHanSu.kt" />
+      <file url="file://$PROJECT_DIR$/src/baekjoon11286.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon10773.kt" />
+      <file url="file://$PROJECT_DIR$/src/01tile.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2565.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11279.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1182.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1874.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1260.kt" />
+      <file url="file://$PROJECT_DIR$/src/fibonacci.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2165.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11725.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1759.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon9251.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1967.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon4803.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11657.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon7562.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2263.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon12852.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11047.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11054.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon14502.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1504.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2156.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon4963.kt" />
+      <file url="file://$PROJECT_DIR$/src/baekjoon10866.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11399.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2618.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1920.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11404.kt" />
+      <file url="file://$PROJECT_DIR$/src/baekjoon1927.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon14003.kt" />
+      <file url="file://$PROJECT_DIR$/src/a+b.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1806.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon2667.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1167.kt" />
+      <file url="file://$PROJECT_DIR$/src/N-Queen.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1463.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon9252.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon11403.kt" />
+      <file url="file://$PROJECT_DIR$/src/baeckjoon1644.kt" />
+      <file url="file://$PROJECT_DIR$/src/programers1.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmers124number.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersColoringBook.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersFindBigRectangle.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersMoreSpicy.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersNextBigNum.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersPickingTheGround.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersQuadZip.kt" />
+      <file url="file://$PROJECT_DIR$/src/programmersRightParenthese.kt" />
+      <file url="file://$PROJECT_DIR$/src/runExcitingFunction.kt" />
+      <file url="file://$PROJECT_DIR$/src/RGBdistance.kt" />
+      <file url="file://$PROJECT_DIR$/src/startLink.kt" />
+      <file url="file://$PROJECT_DIR$/src/sdocu.kt" />
     </excludeFromCompile>
   </component>
 </project>
